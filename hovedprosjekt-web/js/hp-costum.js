@@ -1,5 +1,12 @@
 $(function () {
 
+    
+    var $topSpark = $("#topSpark"),
+        $botSpark = $("#botSpark"),
+        sparkAnim;
+    
+    //if google chrome
+    /*
     //Variables
     var l = new Snap('#leftCable'),
         r = new Snap('#rightCable'),
@@ -10,10 +17,9 @@ $(function () {
 
     //Elements
     var powerball = l.circle(260, 234, 8),
-        powerball2 = r.circle(260, 234, 8),
-        $topSpark = $("#topSpark"),
-        $botSpark = $("#botSpark");
+        powerball2 = r.circle(260, 234, 8);
 
+    
     leftPowerballAnim = function () {
         animateAlongPath(l.select('#leftCablePath'), powerball, 0, 5000, rightPowerballAnim, 0);
     };
@@ -53,8 +59,22 @@ $(function () {
         });
     };
 
-    setTimeout(leftPowerballAnim, 100);
+    setTimeout(leftPowerballAnim, 100);*/
+    //if google chrome
+    
+    //else
+    sparkAnim = function(){
+        $topSpark.fadeIn(80).delay(30).fadeOut(80, function () {
+            $botSpark.fadeIn(80).delay(30).fadeOut(300);
+        });
+    };
+    setInterval(sparkAnim, 5000);
+    //else
+    
+    
 
+    
+    
     //Smooth scroll
     $('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
