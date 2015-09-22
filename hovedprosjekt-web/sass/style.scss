@@ -40,12 +40,13 @@ $navbar-default-link-active-color: #eeeeee;
 
 @mixin introHeader-gradient {
     background: #1ad6fd;
-    background: -moz-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1ad6fd), color-stop(35%, #19b5fe), color-stop(100%, #3498db), color-stop(101%, #3498db));
-    background: -webkit-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
-    background: -o-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
-    background: -ms-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
-    background: linear-gradient(135deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+    background: -moz-linear-gradient(-45deg,  #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1ad6fd), color-stop(35%,#19b5fe), color-stop(100%,#3498db));
+    background: -webkit-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
+    background: -o-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
+    background: -ms-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
+    background: linear-gradient(135deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad6fd', endColorstr='#3498db',GradientType=1 );
 }
 
 
