@@ -96,6 +96,11 @@ ul {
     padding: 0;
 }
 
+/* Remove outline */
+a:focus,
+.btn:focus {
+    outline: none;
+}
 
 /*------------------------------------*\
     Typografy
