@@ -111,6 +111,11 @@ h2 {
     line-height: 1.4em;
 }
 
+h3 {
+    font-size: 1.6em;
+    line-height: 1.3em;
+}
+
 hr.blue-hr {
     border-top: 4px solid $blue;
     width: 100px;
@@ -290,4 +295,23 @@ hr.blue-hr {
 
 .allSparks {
     fill: #f3f3f3;
+}
+
+
+/*------------------------------------*\
+    Media queries
+\*------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    #introHeader #introTekst {
+        padding: 0 15px;
+    }
+    .task-info-box {
+        margin-top: 120px;
+        padding: 60px 30px 80px;
+    }
+    #presentUsSection .member-boxes {
+        margin: 60px 0 80px;
+        color: #fff;
+    }
 }
