@@ -28,6 +28,7 @@ $(function () {
     
     leftPowerballAnim = function () {
         animateAlongPath(l.select('#leftCablePath'), powerball, 0, 5000, rightPowerballAnim, 0);
+        console.log(l.select('#leftCablePath'));
     };
     
     rightPowerballAnim = function () {
