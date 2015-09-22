@@ -127,13 +127,24 @@ hr.blue-hr {
     Content
 \*------------------------------------*/
 
+.nav-bg {
+    background-color: rgba(27,117,187,.8);
+    height: 40px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
 #introHeader {
+    position: relative;
     height: 600px;
     height: 100vh;
     overflow: hidden;
     padding-top: 250px;
     color: white;
     @include introHeader-gradient;
+    z-index: 2;
     /*text-align: right;*/
     #introTekst {
         /*padding-left: 40px;*/
