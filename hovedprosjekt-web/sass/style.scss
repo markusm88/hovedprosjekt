@@ -40,13 +40,12 @@ $navbar-default-link-active-color: #eeeeee;
 
 @mixin introHeader-gradient {
     background: #1ad6fd;
-    background: -moz-linear-gradient(-45deg,  #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1ad6fd), color-stop(35%,#19b5fe), color-stop(100%,#3498db));
-    background: -webkit-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
-    background: -o-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
-    background: -ms-linear-gradient(-45deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
-    background: linear-gradient(135deg,  #1ad6fd 0%,#19b5fe 35%,#3498db 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad6fd', endColorstr='#3498db',GradientType=1 );
+    background: -moz-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1ad6fd), color-stop(35%, #19b5fe), color-stop(100%, #3498db));
+    background: -webkit-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
+    background: -o-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
+    background: -ms-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
+    background: linear-gradient(135deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%);
 }
 
 
@@ -148,11 +147,6 @@ hr.blue-hr {
 
 #presentOurTaskSection {
     margin-bottom: 120px;
-    .task-info-box {
-        margin-top: 120px;
-        padding: 80px 60px 120px;
-        color: #fff;
-    }
     .center-block {
         text-align: center
     }
@@ -165,6 +159,12 @@ hr.blue-hr {
         margin-top: -150px;
         left: calc(100% - 15px);
     }
+}
+
+.task-info-box {
+    margin-top: 120px;
+    padding: 80px 60px 120px;
+    color: #fff;
 }
 
 #presentUsSection {
@@ -203,7 +203,34 @@ hr.blue-hr {
 }
 
 
-/* SVG Animation */
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+#ourFooter {
+    .task-info-box {
+        margin: 0 0 120px;
+    }
+    .btn-contactus {
+        background: #fff;
+        border-color: #f3f3f3;
+        border-radius: 0;
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        transition: all 0.05s linear;
+    }
+    .btn-contactus:hover {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+/*------------------------------------*\
+    SVG Animation
+\*------------------------------------*/
 
 .cable-wrap {
     position: relative;
