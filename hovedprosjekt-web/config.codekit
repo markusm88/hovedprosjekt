@@ -6528,7 +6528,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Markus Mørland",
+"lastSavedByUser": "Fredric Waadeland",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -6713,7 +6713,7 @@
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "Snap, mina",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
