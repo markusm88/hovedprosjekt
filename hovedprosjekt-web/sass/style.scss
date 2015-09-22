@@ -15,37 +15,251 @@
 
 
 */
+
+
+/*------------------------------------*\
+    Bootstrap Customizing
+\*------------------------------------*/
+
+$navbar-default-color: #fff;
+$navbar-default-bg: transparent;
+$navbar-default-border: none;
+$navbar-default-link-color: #ffffff;
+$navbar-default-link-active-color: #eeeeee;
+
+/*------------------------------------*\
+    Imports
+\*------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import "bootstrap";
 
+/*------------------------------------*\
+    Mixins (Here for the moment)
+\*------------------------------------*/
+
+@mixin introHeader-gradient {
+    background: #1ad6fd;
+    background: -moz-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1ad6fd), color-stop(35%, #19b5fe), color-stop(100%, #3498db), color-stop(101%, #3498db));
+    background: -webkit-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+    background: -o-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+    background: -ms-linear-gradient(-45deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+    background: linear-gradient(135deg, #1ad6fd 0%, #19b5fe 35%, #3498db 100%, #3498db 101%);
+}
+
+
+/*------------------------------------*\
+    Variables (Here for the moment)
+\*------------------------------------*/
+
+
+/* Fonts */
+
+$montserrat: 'Montserrat',
+sans-serif;
+
+/* Color */
+
+$light-blue: #1eb0f8;
+$blue: #3498db;
+$dark-blue: #1b79b8;
+
+/*------------------------------------*\
+    Standards
+\*------------------------------------*/
+
 body {
-    padding: 50px 0;
-}
-#main {
-    
-}
-
-#intro-wrap {
-    height: 400px;    
+    padding: 0;
+    font-family: $montserrat;
+    color: #3498db;
 }
 
-.intro-boxes {
+.light-blue-bg {
+    background-color: $light-blue;
+}
+
+.dark-blue-bg {
+    background-color: $dark-blue;
+}
+
+.set-left {
+    margin-left: 0;
+}
+
+.set-right {
+    margin-right: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*------------------------------------*\
+    Typografy
+\*------------------------------------*/
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.4em;
+    line-height: 1.4em;
+}
+
+hr.blue-hr {
+    border-top: 4px solid $blue;
+    width: 100px;
+    margin-bottom: 2em;
+}
+
+
+/*------------------------------------*\
+    Content
+\*------------------------------------*/
+
+#introHeader {
+    height: 600px;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 250px;
+    color: white;
+    @include introHeader-gradient;
+    /*text-align: right;*/
+    #introTekst {
+        /*padding-left: 40px;*/
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+    }
+    .cable-connect {
+        width: 458px;
+        height: 395px;
+    }
+}
+
+#main {}
+
+#presentOurTaskSection {
+    margin-bottom: 120px;
+    .task-info-box {
+        margin-top: 120px;
+        padding: 80px 60px 120px;
+        color: #fff;
+    }
+    .center-block {
+        text-align: center
+    }
+    li {
+        margin: 1.8em 0;
+    }
+    .icon-for-box {
+        position: absolute;
+        top: 50%;
+        margin-top: -150px;
+        left: calc(100% - 15px);
+    }
+}
+
+#presentUsSection {
+    h1 {
+        text-align: center;
+    }
+    .member-boxes {
+        margin: 120px 0 200px;
+        color: #fff;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .member-contactinfo {
+        padding: 20px 40px;
+        ul {
+            margin-bottom: 20px;
+            li {
+                margin: 20px 0;
+                span {
+                    font-size: 1em;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .member-img {
+        background-color: #fff;
+        padding: 0;
+    }
+    #first-member {}
+    #second-member {}
+    #third-member {}
+    #forth-member {}
+}
+
+
+/* SVG Animation */
+
+.cable-wrap {
+    position: relative;
     height: 100%;
+    margin-top: 10%;
 }
 
-#first-intro {
-	background: red;
+.cable {
+    position: absolute;
+    width: 60%;
+    top: 0;
 }
 
-#second-intro {
-	background: blue;
+.cable.cLeft {
+    float: left;
+    left: -15%;
 }
 
-#third-intro {
-	background: green;
+.cable.cRight {
+    float: right;
+    right: -15%;
+    top: 1px;
 }
 
-#forth-intro {
-	background: yellow;
+.cableIt {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
 }
 
+.c-inner-circle {
+    fill: #3498db;
+}
 
+.c-outer-circle {
+    fill: #1B75BB;
+}
+
+.c-body,
+.c-plug,
+.c-hole {
+    fill: #1B75BB;
+}
+
+#sparks {
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    top: 10px;
+}
+
+#topSpark,
+#botSpark {
+    display: none;
+}
+
+.allSparks {
+    fill: #f3f3f3;
+}
