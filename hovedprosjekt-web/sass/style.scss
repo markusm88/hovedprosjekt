@@ -223,6 +223,55 @@ hr.blue-hr {
     #forth-member {}
 }
 
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+nav.navbar{
+    min-height: 40px;
+    height: 40px;
+    
+    .container{
+        min-height: 40px;
+    }
+}
+
+.navbar-brand{
+    padding: 7px 0 0 25px;
+}
+
+.logo{
+    height: 30px;
+}
+
+.navbar-default .navbar-toggle{
+    border: none;
+    padding: 6px;
+    margin: 8px 20px;
+    
+    .icon-bar{
+        background-color: white;
+    }
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: initial;
+}
+
+.navbar-collapse{
+    position: absolute;
+    margin-top: -10px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    
+    a{
+        text-align: center;
+    }
+}
 
 /*------------------------------------*\
     Footer

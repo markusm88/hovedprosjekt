@@ -5265,6 +5265,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/group\/markus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24569,
+		"inputAbbreviatedPath": "\/images\/group\/markus.jpg",
+		"outputAbbreviatedPath": "\/images\/group\/markus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/group\/mh.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5294,6 +5305,17 @@
 		"initialSize": 27507,
 		"inputAbbreviatedPath": "\/images\/group\/mm.jpg",
 		"outputAbbreviatedPath": "\/images\/group\/mm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/group\/vi4_logo_3x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6395,
+		"inputAbbreviatedPath": "\/images\/group\/vi4_logo_3x.png",
+		"outputAbbreviatedPath": "\/images\/group\/vi4_logo_3x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6528,7 +6550,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Markus Mørland",
+"lastSavedByUser": "Fredric Waadeland",
 "manualImportLinks": {
 	},
 "projectAttributes": {
