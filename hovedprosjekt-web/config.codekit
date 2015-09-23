@@ -5276,13 +5276,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/group\/mh.png": {
+	"\/images\/group\/mh.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22823,
+		"inputAbbreviatedPath": "\/images\/group\/mh.jpg",
+		"outputAbbreviatedPath": "\/images\/group\/mh.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/group\/mhorgset.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 229086,
-		"inputAbbreviatedPath": "\/images\/group\/mh.png",
-		"outputAbbreviatedPath": "\/images\/group\/mh.png",
+		"inputAbbreviatedPath": "\/images\/group\/mhorgset.png",
+		"outputAbbreviatedPath": "\/images\/group\/mhorgset.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
